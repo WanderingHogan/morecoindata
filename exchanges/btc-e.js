@@ -35,7 +35,7 @@ module.exports = {
 
                 pool.query(`INSERT INTO test (exchange, inputCurrency, buyPrice, outputCurrency, sellPrice, utcTime) VALUES ${insertStatement};`, function (err, result) {
                     //  console.log(err)
-                    console.log(result)
+                    // console.log(result)
                     //  console.log(`INSERT INTO test (exchange, inputCurrency, buyPrice, outputCurrency, sellPrice, utcTime) VALUES ${insertStatement};`)
                 });
 
