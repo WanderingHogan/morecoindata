@@ -8,8 +8,7 @@ const env = require('./config/database.js'),
 
 var pool = new Pool(environment.pgconfig);
 
-const btcE = require('./exchanges/btc-e.js'),
-      kraken = require('./exchanges/kraken.js'),
+const kraken = require('./exchanges/kraken.js'),
       polo = require('./exchanges/poloniex.js');
     //       = require('./exchanges/bittrex.js');
 
@@ -19,8 +18,8 @@ const btcE = require('./exchanges/btc-e.js'),
 setInterval(function() {
     let utcDateTime = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
     btcE.sendRequest(request, utcDateTime, pool); // uses async/await because route for each currency
-    polo.sendRequest(request, utcDateTime, pool);
-    kraken.sendRequest(request, utcDateTime, pool);
+    // polo.sendRequest(request, utcDateTime, pool);
+    // kraken.sendRequest(request, utcDateTime, pool);
 
 //     bttx.sendRequest(request, utcDateTime, ExchangeRecord);
 }, (environment.pollFrequencyInSeconds * 1000)); // 30 second intervals, 
