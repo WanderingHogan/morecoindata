@@ -17,8 +17,8 @@ const kraken = require('./exchanges/kraken.js'),
 // load exchanges
 setInterval(function() {
     let utcDateTime = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
-    btcE.sendRequest(request, utcDateTime, pool); // uses async/await because route for each currency
-    // polo.sendRequest(request, utcDateTime, pool);
+    // btcE.sendRequest(request, utcDateTime, pool); // uses async/await because route for each currency
+    polo.sendRequest(request, utcDateTime, pool);
     // kraken.sendRequest(request, utcDateTime, pool);
 
 //     bttx.sendRequest(request, utcDateTime, ExchangeRecord);
