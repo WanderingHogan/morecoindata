@@ -24,3 +24,5 @@ kucoin: https://kucoinapidocs.docs.apiary.io/#
 binance: https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
 hitbtc: https://api.hitbtc.com/
 coinex: https://github.com/coinexcom/coinex_exchange_api/wiki
+lbank: https://github.com/LBank-exchange/lbank-official-api-docs
+bittrex: https://support.bittrex.com/hc/en-us/articles/115003723911-Developer-s-Guide-API
