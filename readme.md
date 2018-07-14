@@ -18,4 +18,7 @@ Starting currencies: (top 10 based on market share from here: https://coinmarket
 - Stellar Lumens XLM
 - Augur REP
 
-Exchanges: BTC-E, Poloniex, Other?
+Exchanges: BTC-E, Poloniex, 
+
+kucoin: https://kucoinapidocs.docs.apiary.io/#
+binance: https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
